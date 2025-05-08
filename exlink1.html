@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="exlink1.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 768px)">
 </head>
 
 <body>
@@ -47,6 +53,32 @@
                     <circle fill="#0c3359" cx="90.8" cy="153" r="13" />
                     <text class="cart-num" fill="#0c3359" x="116" y="35" dy=".48em" text-anchor="middle">0</text>
                 </svg>
+                <div class="bstrap">
+                    <button class="bur-mobil btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <span class="bar-icon"><i class="fa-solid fa-bars"></i></span></button>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div class="offcanvas-title" id="offcanvasRightLabel">
+                                <div class="log-in-mob">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                    <a href="#">Log in</a>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <a href="exlink1.html">Bookstore</a>
+                            <a href="#event-section">Event</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+    
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -110,8 +142,79 @@
             </div>
             <div class="productspace">
                 <div class="producthead">
-                    <p class="filter">All Products</p>
+                    <p class="all-products">All Products</p>
                 </div>
+
+                <div class="bstrap-filter">
+                    <button class="bur-mobil btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">
+                        <span class="filter">Filter</span></button>
+    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div class="offcanvas-title" id="offcanvasRigh2tLabel">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body-select">
+                            <div class="selectbar">
+                                <p class="filter">Filter by</p>
+                                <div class="border"></div>
+                                <div class="colection">
+                                    <p>Colection</p>
+                                    <p> <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                                            <path fill-rule="evenodd" d="M15.5,10 L15.5,11 L4.5,11 L4.5,10 L15.5,10 Z"></path>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="checklist">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="novels">
+                                            <label for="novels">Novels</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="design">
+                                            <label for="design">Design at Art</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="lifestyle">
+                                            <label for="lifestyle">Life Style</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="monthly">
+                                            <label for="monthly">Our Books of the Month</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="bestsellers">
+                                            <label for="bestsellers">Best Sellers</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="travel">
+                                            <label for="travel">Travel Guides</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="border"></div>
+                                <div class="colection">
+                                    <p>Price</p>
+                                    <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="14"
+                                            viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z">
+                                            </path>
+                                        </svg>
+                                    </p>
+                                </div>
+                                <div class="border"></div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
                 <div class="products">
 
                     <div class="product-card">
@@ -352,7 +455,7 @@
                         <div class="checkbox-error">Check the box to continue.</div>
                     </div>
 
-                    <button type="submit">Subscribe</button>
+                    <button class="butt-subscribe" type="submit">Subscribe</button>
                 </div>
             </form>
         </div>

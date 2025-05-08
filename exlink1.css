@@ -183,7 +183,7 @@ overflow: visible;
 
 }
 
-.filter {
+.all-products {
     font-family: var(--font-thin);
     font-size: 1.4rem;
     font-weight: 400;
@@ -496,4 +496,57 @@ form {
 
   }
 
-  
+
+  @media (max-width: 768px) {
+    .bur-mobil span{
+        margin-top: 0;
+    }
+
+    .selectbar{
+        display: none;
+    }
+    .bookstore{
+        display: flex;
+        justify-content: center;
+    }
+
+.add-to-cart{
+    opacity: 1;
+    background-color: #0d345a;
+    visibility: visible;
+}
+
+    .bstrap-filter{
+        width: 95%;
+        height: 3rem;
+        display: flex;
+        justify-content:end;
+        align-items: flex-start;
+    }
+    .filter{
+        font-family: var(--font-thin);
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .offcanvas-body-select{
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+
+    }
+
+    .offcanvas-body-select .selectbar{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+
+    }
+
+    .bookstore .product-card{
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+}
+

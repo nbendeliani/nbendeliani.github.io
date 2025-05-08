@@ -1,11 +1,11 @@
 /* ex.css */
 
 :root {
-    --font-color-dark: #0c3359;
-    --font-color-lite: #a3bcd4;
-    --font-thin: 'Josefin Sans', sans-serif;
-    --font-thick: 'Libre Baskerville', serif;
-    --card-color: #f7f7f7;
+  --font-color-dark: #0c3359;
+  --font-color-lite: #a3bcd4;
+  --font-thin: 'Josefin Sans', sans-serif;
+  --font-thick: 'Libre Baskerville', serif;
+  --card-color: #f7f7f7;
 }
 
 * {
@@ -117,10 +117,15 @@
 }
 
 .log-in {
-    width: 15%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.log-in i{
+  font-size: 150%;
+  color: var(--font-color-dark);
 }
 
 .cart-num {
@@ -305,7 +310,7 @@
     height: fit-content;
  }
 
-.border{
+.borders{
 height: fit-content;
 width: 2%;
 border: solid 0.5px var(--font-color-lite);
@@ -350,9 +355,10 @@ margin: 4%;
   height: 100%;
   text-decoration: none;
   color:white;
+
   transition: 0.5s ease;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .our-story-link:hover{
     background-color: white;
@@ -436,6 +442,8 @@ margin: 4%;
     cursor: pointer;
     border-radius: 3px;
     transition: 0.5s ease;
+   padding-left: 2rem;
+   padding-right: 2rem;;
 }
 .rsvp:hover{
 opacity: 0.6;
@@ -462,12 +470,14 @@ opacity: 0.6;
     align-items: center;
     font-family: var(--font-thin);
     font-weight: 200;
+    padding-bottom: 20vh;
+
 
 }
 .footer-column{
-    width: 20%;
+    width: 15%;
     height: 15rem;
-    gap: 2rem;
+    gap: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
@@ -477,8 +487,10 @@ opacity: 0.6;
     
 }
 .first-p{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
+
+
 
 .footer-column a{
     text-decoration: none;
@@ -495,9 +507,11 @@ opacity: 0.6;
 
 form {
     max-width: 100%;
+    margin-top: -1rem;
   }
   .form-group {
     margin-bottom: 1rem;
+  
   }
   label {
     display: flex;
@@ -506,7 +520,7 @@ form {
   }
   input[type="email"] {
     border: 2px solid white;
-    background-color: #0c3359;
+    background-color: var(--font-color-dark);
     color: white;
     font-size: 1rem;
     padding: 0.5rem;
@@ -514,16 +528,10 @@ form {
   }
   
   input[type="email"]:invalid {
-    border-color: #ff4a4a;
+    border-color: red;
   }
   input[type="email"]:invalid + .email-error {
     display: block;
-  }
-  .email-error {
-    display: none;
-    color: #ff4a4a;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
   }
   .checkbox-wrapper {
     display: flex;
@@ -536,16 +544,25 @@ form {
   }
   .checkbox-error {
     display: none;
-    color: #ff4a4a;
     font-size: 0.9rem;
   }
-  button {
+  .butt-subscribe {
     background-color: white;
-    color: #0c3359;
-    padding: 0.7rem 2.5rem;
+    color: var(--font-color-dark);
+    width: 70%;
+    height: 6vh;
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    margin-bottom: 2rem;
+    font-family: var(--font-thick);
+ 
+  }
+  .butt-subscribe:hover{
+    background-color: var(--font-color-dark);
+    color: white;
+    transition: 0.3s ease;
+
   }
 
 .checkbox-wrapper label{
@@ -558,4 +575,13 @@ form {
     align-items: center;
     justify-content: center;
 
+  }
+
+  .bur-mobil{
+    display: none;
+  }
+
+
+  .carousel{
+    display: none;
   }
