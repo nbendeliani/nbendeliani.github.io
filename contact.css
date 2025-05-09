@@ -346,6 +346,7 @@ margin-top: 1rem;
     align-items: center;
     font-family: var(--font-thin);
     font-weight: 200;
+    padding-bottom: 10%;
 
 }
 .footer-column{
@@ -423,7 +424,7 @@ margin-top: 1rem;
     color: #ff4a4a;
     font-size: 0.9rem;
   }
-  .footer-button {
+  .butt-subscribe  {
     background-color: white;
     color: #0c3359;
     padding: 0.7rem 2.5rem;
@@ -442,4 +443,53 @@ margin-top: 1rem;
     align-items: flex-start;
     justify-content: flex-start;
 
+  }
+
+  .bstrap{
+   display: none;
+  }
+
+  @media (max-width: 768px){
+    .contactbody{
+height: max-content;
+    }
+    .graybackgrownd{
+    height: max-content;
+    }
+    .contacttext{
+        width: 100%;
+        height: max-content;
+    }
+
+    .storeandservis{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .store{
+        width: 100%;
+    }
+    .edress{
+        margin-top: 0;
+    }
+    .storenum{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .form-row{
+        display: flex;
+           flex-direction: column;
+     }
+
+     .form-container label{
+        font-size: 1rem;
+     }
+     .form-container input{
+        font-size: 1rem;
+     }
+    
   }

@@ -1,3 +1,4 @@
+/* ex.css */
 
 :root {
     --font-color-dark: #0c3359;
@@ -122,7 +123,9 @@
     font-size: 90px;
 }
 
+
 .midle-head {
+    margin-top: 3rem;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -153,71 +156,36 @@
     font-weight: 700;
     font-size: 3rem;
 }
- .Storybody{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
- }
 
-.greybeckground{
-    position: relative;
+.contactbody{
+    width: 100%;
+    height: 900px;
     display: flex;
     justify-content: center;
+    margin-bottom: 15%;
+
+}
+.graybackgrownd{
     width: 90%;
     height: 800px;
-    background-color:#f2f2f2 ;
-    margin-top: 8%;
-
-}
-
-.storyimage {
-    margin-top: -5%;
-    width: auto;
-    height: 650px; 
-    overflow: hidden;
-}
-
-.storyimage img {
-    height: 100%;
-    object-fit:cover; 
-    margin-left: 3%;
-
-}
-.storytext{
-    position: absolute;
-    background-color: #ffffff;
-    left:8%;
-    top:15%;
-    width: 40%;
-    height: auto;
-    border: 1rem solid var(--font-color-dark);
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-
-}
-.storytext p{
-    font-family: var(--font-thin);
-    font-size: 1.1rem;
-    font-weight: 300;
-    margin-left:13%;
-    margin-right: 13%;
+    background-color:#f2f2f2;
     margin-top: 15%;
-    margin-bottom:15% ;
-    color: var(--font-color-dark);
+    display: flex;
+    justify-content: center;
+
 }
 
-
-
-
-
-
-
-
-
-
+.contacttext{
+margin-top: -10%;
+ border: 1rem solid var(--font-color-dark);
+ height: fit-content;
+ width: 75%;
+ background-color: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
 
 
 
@@ -233,6 +201,7 @@
     align-items: center;
     font-family: var(--font-thin);
     font-weight: 200;
+    padding-bottom: 10%;
 
 }
 .footer-column{
@@ -263,19 +232,19 @@
 
 
 
-
-form {
-    max-width: fit-content;
+.footer-form {
+    max-width: 100%;
   }
   .form-group {
     margin-bottom: 1rem;
+    width: 100%;
   }
-  label {
+  .footer-label {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
   }
-  input[type="email"] {
+  .footer-input[type="email"] {
     border: 2px solid white;
     background-color: #0c3359;
     color: white;
@@ -284,10 +253,10 @@ form {
     width: 100%;
   }
   
-  input[type="email"]:invalid {
+  .footer-input[type="email"]:invalid {
     border-color: #ff4a4a;
   }
-  input[type="email"]:invalid + .email-error {
+  .footer-input[type="email"]:invalid + .email-error {
     display: block;
   }
   .email-error {
@@ -302,7 +271,7 @@ form {
     gap: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  input[type="checkbox"]:not(:checked) ~ .checkbox-error {
+  .footer-input[type="checkbox"]:not(:checked) ~ .checkbox-error {
     display: block;
   }
   .checkbox-error {
@@ -310,7 +279,7 @@ form {
     color: #ff4a4a;
     font-size: 0.9rem;
   }
-  button {
+  .butt-subscribe  {
     background-color: white;
     color: #0c3359;
     padding: 0.7rem 2.5rem;
@@ -319,52 +288,63 @@ form {
     cursor: pointer;
   }
 
-.checkbox-wrapper label{
+.checkbox-wrapper .footer-label{
     width: 50%;
 }
 
   .labrl-button{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 
   }
+
   .bstrap{
-display: none;
+   display: none;
   }
 
   @media (max-width: 768px){
-    .storyimage{
-        height: fit-content;
+    .contactbody{
+height: max-content;
     }
-    .storyimage img{
+    .graybackgrownd{
+    height: max-content;
+    }
+    .contacttext{
         width: 100%;
-        height: 100%;
-        object-fit: contain; 
-    }
-    .Storybody{
         height: max-content;
-        margin-bottom: 18vh;
     }
-    .storytext{
-        width: 100%;
-        left: 0px;
-        top: auto;
+
+    .storeandservis{
+        height: fit-content;
         display: flex;
-        justify-content: center;
-
-
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
-    .storytext p{
-        text-align: center;
-        margin: 5%;
+    .store{
+        width: 100%;
     }
-    .Storybody{
-margin-bottom: 0;
+    .edress{
+        margin-top: 0;
     }
-    .storyimage IMG{
-margin-left: 0;
+    .storenum{
+        margin-bottom: 0;
+        margin-top: 0;
     }
-  } 
+
+    .form-row{
+        display: flex;
+           flex-direction: column;
+     }
+
+     .form-container label{
+        font-size: 1rem;
+     }
+     .form-container input{
+        font-size: 1rem;
+     }
+    
+  }

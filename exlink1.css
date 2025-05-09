@@ -496,6 +496,14 @@ form {
 
   }
 
+  .bstrap-filter{
+    display: none;
+  }
+
+  .bstrap{
+    display: none;
+  }
+
 
   @media (max-width: 768px) {
     .bur-mobil span{
