@@ -123,139 +123,30 @@
     font-size: 90px;
 }
 
-
-.midle-head {
-    margin-top: 3rem;
+.boock-card-cont{
     width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    ;
-}
-
-.midle-head-text {
-    width: 94%;
-    height: fit-content;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.par-first {
-    font-family: var(--font-thin);
-    color: var(--font-color-dark);
-    font-size: 1.5rem;
-}
-
-.par-second {
-    font-family: var(--font-thick);
-    color: var(--font-color-dark);
-    font-weight: 700;
-    font-size: 3rem;
-}
-
-.contactbody{
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20%;
-
-}
-.graybackgrownd{
-    width: 90%;
     height: max-content;
-    background-color:#f2f2f2;
-    margin-top: 15%;
     display: flex;
     justify-content: center;
-    padding-bottom: 5%;
-
 }
-
-.contacttext{
-margin-top: -10%;
- border: 1rem solid var(--font-color-dark);
- height: fit-content;
- width: 70%;
- background-color: white;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-
-
-.text-space{
-    width: 80%;
+.boock-card-body{
+    width: 50%;
+    height: fit-content;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left:15%;
-    margin-right: 15%;
-    margin-top: 10%;
-    margin-bottom: 8%;
-}
-
-.head-pharagrap{
-    margin-top: 5%;
-    margin-bottom: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.head-pharagrap h1{
-    font-family: var(--font-thin);
-    font-size: 1.5rem;
-    color: var(--font-color-dark);
-}
-
-.paragraph{
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    color: var(--font-color-dark);
-    font-family: var(--font-thin);
-}
-.general-setting{
-    margin-bottom:3%;
-    font-family: var(--font-thin);
-    color: var(--font-color-dark);
-    font-weight: 400;
-    width: 100%;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-
+    align-items: center;
 }
-.questions{
-    margin-bottom:3%;
-    font-family: var(--font-thin);
-    color: var(--font-color-dark);
-    font-weight: 400;
-    width: 100%;
+.img-cont{
+    width: 45%;
+    height: 80%;
 }
-.border-lighte{
-    width: 100%;
-    height: 0.05rem;
-    background-color: var(--font-color-lite);
-    margin-bottom: 3%;
+.inf-cont{
+    display: flex;
+    flex-direction: column;
+     width: 45%;
+    height: 80%;
 }
-
-
-
-
-
-
-
-
-
 
 
 

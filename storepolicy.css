@@ -127,7 +127,7 @@
 .midle-head {
     margin-top: 3rem;
     width: 100%;
-    height: fit-content;
+    height: min-content;
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -159,10 +159,10 @@
 
 .contactbody{
     width: 100%;
-    height: 900px;
+    height: max-content;
     display: flex;
     justify-content: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 
 }
 .graybackgrownd{
@@ -201,52 +201,28 @@ margin-top: -10%;
     margin-bottom: 8%;
 }
 
-.head-pharagrap{
-    margin-top: 5%;
-    margin-bottom: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
-.head-pharagrap h1{
-    font-family: var(--font-thin);
-    font-size: 1.5rem;
-    color: var(--font-color-dark);
-}
-
-.paragraph{
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
+.header-customer{
     color: var(--font-color-dark);
     font-family: var(--font-thin);
-}
-.general-setting{
-    margin-bottom:3%;
-    font-family: var(--font-thin);
-    color: var(--font-color-dark);
+    font-size: 1.3rem;
     font-weight: 400;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
 }
+
 .questions{
-    margin-bottom:3%;
-    font-family: var(--font-thin);
     color: var(--font-color-dark);
-    font-weight: 400;
+    font-family: var(--font-thin);
+    font-size: 1.1rem;
+    margin-bottom:3%;
     width: 100%;
+    font-weight: 300;
 }
-.border-lighte{
-    width: 100%;
-    height: 0.05rem;
-    background-color: var(--font-color-lite);
-    margin-bottom: 3%;
+
+.questions ul{
+    padding-left: 2%;
 }
+
+
 
 
 
