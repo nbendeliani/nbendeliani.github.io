@@ -123,30 +123,186 @@
     font-size: 90px;
 }
 
+
+
+
+
 .boock-card-cont{
+    margin-top: 7vh;
+    gap: 2rem;
     width: 100%;
     height: max-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom:10vh ;
+}
+.home-prev-next{
+    width: 50%;
+    display: flex;
+    justify-content:space-between ;
+    font-family: var(--font-thin);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.home-prev-next a{
+    text-decoration: none;
+    color: var(--font-color-dark);
 }
 .boock-card-body{
-    width: 50%;
+    width: 55%;
     height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 .img-cont{
-    width: 45%;
-    height: 80%;
+    height: max-content;
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    width: 55%;
+    overflow: hidden;
+    font-family: var(--font-thin);
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.img-cont img{
+    width: 100%;
+    object-fit: contain;
 }
 .inf-cont{
     display: flex;
     flex-direction: column;
-     width: 45%;
-    height: 80%;
+     width: 40%;
 }
+
+.product-card {
+  width: 100%;
+  font-family: var(--font-thin);
+
+}
+
+
+
+
+.product-title {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.sku {
+  color: var(--font-color-lite);
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.quantity-control {
+  display: flex;
+  width: 30%;
+  height: 4vh;
+  border: 1px solid var(--font-color-dark);
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.add-to-cart {
+  width: 100%;
+  background-color: var(--font-color-dark);
+  color: white;
+  border: none;
+  height: 3rem;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.section {
+  border-top: 1px solid var(--font-color-lite);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.section-text {
+font-weight: 200;
+  font-size: 1.1em;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.collapsed .section-text {
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8%;
+  margin: 30px 0;
+  font-size: 1em;
+}
+
+.fb {
+  color: #1877f2 
+}
+
+.pin {
+  color: #e60023; 
+}
+
+.wa {
+  color: #25d366; 
+}
+
+.xt {
+  color: #000; 
+}
+
+.back-home{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    display: none;
+}
+
+.back-home a{
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-thin);
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+
 
 
 
@@ -264,45 +420,39 @@
 
   @media (max-width: 768px){
     .contactbody{
-height: max-content;
-    }
-    .graybackgrownd{
-    height: max-content;
-    }
-    .contacttext{
-        width: 100%;
-        height: max-content;
+     height: max-content;
     }
 
-    .storeandservis{
-        height: fit-content;
+    .boock-card-body{
         display: flex;
         flex-direction: column;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-    .store{
         width: 100%;
-    }
-    .edress{
-        margin-top: 0;
-    }
-    .storenum{
-        margin-bottom: 0;
-        margin-top: 0;
+        height: min-content;
+        
     }
 
-    .form-row{
-        display: flex;
-           flex-direction: column;
-     }
+    .home-prev-next{
+        display: none;
+    }
+ .img-cont{
+    width: 80%;
+    margin: 0;
+ }
+ .img-cont p{
+    display: none;
+ }
+.inf-cont{
+    margin-top: 20%;
+    width: 80%;
+}
 
-     .form-container label{
-        font-size: 1rem;
-     }
-     .form-container input{
-        font-size: 1rem;
-     }
-    
+.sku{
+    margin-top: -30%;
+    margin-bottom: 20%;
+}
+
+
+.back-home{
+display: block;
+}
   }
