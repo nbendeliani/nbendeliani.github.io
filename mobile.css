@@ -46,6 +46,11 @@
     overflow: hidden;
 }
 
+.main-poster p {
+    font-size: 4vh;
+
+}
+
 .poster-conteiner img {
     width: 100vw;
     height: 35vh;
